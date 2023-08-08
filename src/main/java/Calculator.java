@@ -52,7 +52,7 @@ public class Calculator {
             if (scanner.hasNextLine()) {
                 scanner.nextLine();
                 operator = scanner.nextLine();
-            } else
+            } else 
             {
                 System.out.println("This line does not fit");
             }
