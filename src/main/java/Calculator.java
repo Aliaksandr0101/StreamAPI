@@ -58,7 +58,7 @@ public class Calculator {
             }
 
             double result = calculate(numberFirst, numberSecond, operator);
-            String resultFinish = (result != 0) ? "Результат: "  + result : "You enter the data incorrectly. Try again";
+            String resultFinish = (result != 0) ? "Result: "  + result : "You enter the data incorrectly. Try again";
             System.out.println(resultFinish);
         }
     }
