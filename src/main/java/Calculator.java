@@ -51,8 +51,8 @@ public class Calculator {
             System.out.println("Pls enter operator + - / *");
             if (scanner.hasNextLine()) {
                 scanner.nextLine();
-                operator = scanner.nextLine();
-            } else 
+                operator = (scanner.nextLine()).trim();
+            } else
             {
                 System.out.println("This line does not fit");
             }
