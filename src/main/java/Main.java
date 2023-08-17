@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        int j = 9;
         String[] arr = {"word", "mouse", "calculator"};
         Func func;
         func = (String [] arrayOne) -> {
