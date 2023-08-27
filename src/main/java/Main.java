@@ -1,6 +1,14 @@
+import java.util.stream.IntStream;
+
 public class Main {
     public static void main(String[] args) {
-        int j = 9;
+        IntStream.concat(
+                IntStream.range(2,5),
+                IntStream.range(0,4))
+                .distinct()
+                .sorted()
+                .forEach(System.out::println);
+        /*int j = 9;
         String[] arr = {"word", "mouse", "calculator"};
         Func func;
         func = (String [] arrayOne) -> {
@@ -15,7 +23,7 @@ public class Main {
                 return maxWord;
         };
        String str = func.preMaxWord(arr);
-        System.out.println(str);
+        System.out.println(str);*/
 
     }
     }
