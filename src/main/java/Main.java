@@ -8,6 +8,10 @@ public class Main {
                 .distinct()
                 .sorted()
                 .forEach(System.out::println);
+        long count = IntStream.range(0, 10)
+                .flatMap(k - > IntStream.range(0, k))
+                .count();
+        System.out.println(count);
         /*int j = 9;
         String[] arr = {"word", "mouse", "calculator"};
         Func func;
