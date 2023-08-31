@@ -2,16 +2,20 @@ import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) {
-        IntStream.concat(
+      /*  IntStream.concat(
                 IntStream.range(2,5),
                 IntStream.range(0,4))
                 .distinct()
                 .sorted()
-                .forEach(System.out::println);
-        long count = IntStream.range(0, 10)
-                .flatMap(k - > IntStream.range(0, k))
+                .forEach(System.out::println);*/
+       /* long count = IntStream.range(0, 10)
                 .count();
-        System.out.println(count);
+        System.out.println(count);*/
+        int firstSeq = IntStream.range(4, 5478)
+                .parallel()
+                .findFirst()
+                .getAsInt();
+        System.out.println(firstSeq);
         /*int j = 9;
         String[] arr = {"word", "mouse", "calculator"};
         Func func;
