@@ -1,4 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,6 +19,18 @@ public class Main {
                 .findFirst()
                 .getAsInt();
         System.out.println(firstSeq);
+
+       /* ArrayList<String> names = new ArrayList<String>();
+        names.addAll(Arrays.asList(new String[]{"Tom", "Sam", "Bob", "Alice"}));
+
+        boolean none = names.stream().noneMatch(s->s=="Bill");
+        System.out.println(none);
+*/
+        boolean result = Stream.of(1, 2, 3, 4, 5)
+                .noneMatch(u -> u == 3);
+        System.out.println(result);
+
+
         /*int j = 9;
         String[] arr = {"word", "mouse", "calculator"};
         Func func;
