@@ -18,11 +18,11 @@ public class Main {
        /* long count = IntStream.range(0, 10)
                 .count();
         System.out.println(count);*/
-        int firstSeq = IntStream.range(4, 5478)
+       /* int firstSeq = IntStream.range(4, 5478)
                 .parallel()
                 .findFirst()
                 .getAsInt();
-        System.out.println(firstSeq);
+        System.out.println(firstSeq);*/
 
        /* ArrayList<String> names = new ArrayList<String>();
         names.addAll(Arrays.asList(new String[]{"Tom", "Sam", "Bob", "Alice"}));
@@ -30,7 +30,7 @@ public class Main {
         boolean none = names.stream().noneMatch(s->s=="Bill");
         System.out.println(none);
 */
-        boolean result = Stream.of(1, 2, 3, 4, 5)
+        /*boolean result = Stream.of(1, 2, 3, 4, 5)
                 .noneMatch(u -> u == 3);
         System.out.println(result);
 
@@ -42,7 +42,10 @@ public class Main {
                 .collect(Collectors.collectingAndThen(
                         Collectors.toList(),
                         Collections::unmodifiableList));
-        listOne.forEach(System.out::println);
+        listOne.forEach(System.out::println);*/
+
+        Stream.of(1, 2, 3, 4, 5, 6)
+                .peek(System.out::println);
 
 
         /*int j = 9;
