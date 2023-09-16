@@ -22,7 +22,7 @@ public class PracticeStream {
         System.out.println("Employees with surname on J:");
         surnameEmployeeOnJ.stream().forEach(System.out::println);
         System.out.println();
-        
+
 
 
         String[] strings = {"pineapple", "banana", "date",  "orange", "fig", "apple", "cherry", "mandarin"};
