@@ -9,7 +9,9 @@ public class SumNumbers<T extends Number> {
     public SumNumbers(T[] arrayNumber) {
         this.arrayNumber = arrayNumber;
     }
-   
+
+     
+
     public void sum() {
         double sumArray = 0.0;
         for (T element : arrayNumber){
@@ -23,13 +25,16 @@ public class SumNumbers<T extends Number> {
         Double [] arrayDouble = {2.2, 7.0, 4.7, 2.2, 1.3};
         Byte [] arrayByte = {2, 7, 8, 1, 4, 8};
         Long [] arrayLong = {456L, 13L, 78L, 45L};
+        Float [] arrayFloat = {1.F, 2.F, 3.F, 4.F, 5.F};
         SumNumbers<Integer> sumNumbersInteger = new SumNumbers<>(arrayInteger);
         SumNumbers<Double> sumNumbersDouble = new SumNumbers<>(arrayDouble);
         SumNumbers<Long> sumNumbersLong = new SumNumbers<>(arrayLong);
         SumNumbers<Byte> sumNumbersByte = new SumNumbers<>(arrayByte);
+        SumNumbers<Float> sumNumbersFloat = new SumNumbers<>(arrayFloat);
         sumNumbersInteger.sum();
         sumNumbersDouble.sum();
         sumNumbersLong.sum();
         sumNumbersByte.sum();
+        sumNumbersFloat.sum();
     }
 }
