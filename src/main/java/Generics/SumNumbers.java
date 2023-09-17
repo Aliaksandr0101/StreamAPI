@@ -11,15 +11,7 @@ public class SumNumbers<T extends Number> {
     public SumNumbers(T[] arrayNumber) {
         this.arrayNumber = arrayNumber;
     }
-
-/*public void SumTwo(){
-    double sum = Arrays.stream(arrayNumber)
-            .mapToDouble(Double::doubleValue) // Преобразование Double в double
-            .sum();
-        double sumTwo = Arrays.stream(arrayNumber).mapToDouble(e -> (double) e).sum();
-    System.out.println("Sum elements array = " + sumTwo);
-
-     }*/
+    
 
     public void sum() {
         double sumArray = 0.0;

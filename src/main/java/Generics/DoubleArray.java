@@ -29,6 +29,15 @@ public class DoubleArray {
 
         String c = Stream.of("s", "u", "p", "e", "r").collect(Collectors.joining(" -> ", "[ ", " ]"));
         System.out.println(c);  // [ s -> u -> p -> e -> r ]
+
+       /*public void SumTwo(){
+            double sum = Arrays.stream(arrayNumber)
+                    .mapToDouble(Double::doubleValue) // Преобразование Double в double
+                    .sum();
+            double sumTwo = Arrays.stream(arrayNumber).mapToDouble(e -> (double) e).sum();
+            System.out.println("Sum elements array = " + sumTwo);
+
+        }*/
             }
         }
 
