@@ -1,11 +1,12 @@
 package Generics;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class DoubleArray {
     public static void main(String[] args) {
-
-
 
                 Double[] doubleArray = {1.5, 2.5, 3.5, 4.5, 5.5};
 
@@ -14,8 +15,21 @@ public class DoubleArray {
                         .sum(); // Суммирование элементов
 
                 System.out.println("Сумма элементов массива: " + sum);
+
+
+                List<Double> doubleList = Arrays.asList(23.43, 23.32, 8.76567);
+
+                System.out.println("Contents of the list - " + doubleList);
+
+                Stream<Double> doubleStream = doubleList.stream();
+
+                double sumOfElements = doubleStream.collect(Collectors.summingDouble(e -> e));
+
+                System.out.println("Sum of the stream - " + sumOfElements);
             }
         }
+            
 
-    
+
+
 
