@@ -1,7 +1,9 @@
 package Generics;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class SumNumbers<T extends Number> {
     private T [] arrayNumber;
@@ -10,10 +12,18 @@ public class SumNumbers<T extends Number> {
         this.arrayNumber = arrayNumber;
     }
 
-     
+/*public void SumTwo(){
+    double sum = Arrays.stream(arrayNumber)
+            .mapToDouble(Double::doubleValue) // Преобразование Double в double
+            .sum();
+        double sumTwo = Arrays.stream(arrayNumber).mapToDouble(e -> (double) e).sum();
+    System.out.println("Sum elements array = " + sumTwo);
+
+     }*/
 
     public void sum() {
         double sumArray = 0.0;
+
         for (T element : arrayNumber){
             sumArray += element.doubleValue();
         }
@@ -36,5 +46,7 @@ public class SumNumbers<T extends Number> {
         sumNumbersLong.sum();
         sumNumbersByte.sum();
         sumNumbersFloat.sum();
+
+
     }
 }
