@@ -9,9 +9,9 @@ public class SumNumbers<T extends Number> {
     private T [] arrayNumber;
 
     public SumNumbers(T[] arrayNumber) {
+
         this.arrayNumber = arrayNumber;
     }
-    
 
     public void sum() {
         double sumArray = 0.0;
