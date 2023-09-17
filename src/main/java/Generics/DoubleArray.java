@@ -26,9 +26,12 @@ public class DoubleArray {
                 double sumOfElements = doubleStream.collect(Collectors.summingDouble(e -> e));
 
                 System.out.println("Sum of the stream - " + sumOfElements);
+
+        String c = Stream.of("s", "u", "p", "e", "r").collect(Collectors.joining(" -> ", "[ ", " ]"));
+        System.out.println(c);  // [ s -> u -> p -> e -> r ]
             }
         }
-            
+
 
 
 
