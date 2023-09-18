@@ -1,5 +1,6 @@
 package Generics;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -38,6 +39,19 @@ public class DoubleArray {
             System.out.println("Sum elements array = " + sumTwo);
 
         }*/
+
+        List<String> list = new ArrayList<String>();
+        list.add("One");
+        list.add("Two");
+        list.add("Three");
+        list.add("Four");
+        list.add("Five");
+        list.add("Six");
+        list.add("Seven");
+        list.add("Eight");
+        list.add("Nine");
+        list.add("Ten");
+        Stream stream = list.stream();
             }
         }
 
