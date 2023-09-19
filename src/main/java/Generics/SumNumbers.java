@@ -12,6 +12,7 @@ public class SumNumbers<T extends Number> {
         this.arrayNumber = arrayNumber;
     }
 
+
     public void sum() {
         double sumArray = 0.0;
 
@@ -37,6 +38,7 @@ public class SumNumbers<T extends Number> {
         sumNumbersLong.sum();
         sumNumbersByte.sum();
         sumNumbersFloat.sum();
+
 
 
     }
