@@ -2,7 +2,7 @@ package Generics;
 
 public class GenericConstructor<T,V> {
     public GenericConstructor(T elementT, V elementV) {
-        if (elementT.getClass() == elementV.getClass()){
+        if (elementT instanceof V){
             System.out.println("The classes coincided");
         } else {
             System.out.println("The classes is not match");
@@ -12,6 +12,9 @@ public class GenericConstructor<T,V> {
     public static void main(String[] args) {
          GenericConstructor<String, String> GenericOne = new GenericConstructor<>("Car", "Elephant");
          GenericConstructor<String, Double> GenericTwo = new GenericConstructor<>("Car", 78.7);
+         String l = "dfcz";
+         String h = "grnhz";
+        System.out.println(l instanceof String);
 
 
     }
