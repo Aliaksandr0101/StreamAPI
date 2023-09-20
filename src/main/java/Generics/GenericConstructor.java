@@ -8,4 +8,8 @@ public class GenericConstructor<T,V> {
             System.out.println("The classes is not match");
         }
     }
+
+    public static void main(String[] args) {
+        
+    }
 }
