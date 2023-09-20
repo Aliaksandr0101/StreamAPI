@@ -10,6 +10,9 @@ public class GenericConstructor<T,V> {
     }
 
     public static void main(String[] args) {
-        
+         GenericConstructor<String, String> GenericOne = new GenericConstructor<>("Car", "Elephant");
+         GenericConstructor<String, Double> GenericTwo = new GenericConstructor<>("Car", 78.7);
+
+
     }
 }
