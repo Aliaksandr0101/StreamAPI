@@ -17,23 +17,33 @@ public class Animal {
         this.colorAnimal = colorAnimal;
     }
 
-    public class Whale extends Animal{
+    public static class Whale extends Animal{
 
         public Whale(String typeAnimal, String colorAnimal) {
             super(typeAnimal, colorAnimal);
         }
     };
-    public class Dog extends Animal{
+    public static class Dog extends Animal{
 
         public Dog(String typeAnimal, String colorAnimal) {
             super(typeAnimal, colorAnimal);
         }
     };
-    public class AnimalGeneric<T extends Animal> {
+    public static class AnimalGenericInfo<T extends Animal> {
+        public void BringOut(T animal) {
+            System.out.println("Animal is " + animal.getTypeAnimal() + ". The color of this " +
+                    animal.getTypeAnimal() + " " + animal.getColorAnimal() + ".");
+        }
 
     };
 
     public static void main(String[] args) {
+        Dog dog = new Dog("dog", "black");
+        Whale whale = new Whale("whale", "blue");
+        AnimalGenericInfo<Dog> infoDog = new AnimalGenericInfo<>();
+        AnimalGenericInfo<Whale> infoWhole = new AnimalGenericInfo<>();
+        infoDog.BringOut(dog);
+        infoWhole.BringOut(whale);
 
     }
 }
