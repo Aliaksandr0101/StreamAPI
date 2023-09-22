@@ -13,5 +13,6 @@ public class GenericConstructor<T,V> {
          GenericConstructor<String, String> GenericOne = new GenericConstructor<>("Car", "Elephant");
          GenericConstructor<String, Double> GenericTwo = new GenericConstructor<>("Car", 78.7);
         System.out.println("h");
+        System.out.println("e");
     }
 }
