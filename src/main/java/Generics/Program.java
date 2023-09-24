@@ -2,42 +2,36 @@ package Generics;
 
 public class Program {
     public static void main(String[] args) {
-        AccountTest<String> acc1 = new AccountTest<>("Vasya", 23);
-        AccountTest<Integer> acc2 = new AccountTest<>(456, 33);
+        AccountTest<String> acc1 = new AccountTest<>("Vasya", 56);
+        AccountTest<String> acc2 = new AccountTest<>("Petya", 56);
         System.out.println(acc1.getId());
         System.out.println(acc2.getId());
-
+        System.out.println(acc1.getSum());
     }
 }
     interface AccountPlus<T> {
-
         T getId();
-        int getSum();
-        void setSum(int sum);
+
 
     }
-        class AccountTest<T> implements AccountPlus<T>{
+        class AccountTest<T> implements AccountPlus<T> {
             private T id;
-            private int sum;
 
-            @Override
-            public T getId() {
-                return id;
-            }
-
-            @Override
             public int getSum() {
                 return sum;
             }
 
-            @Override
-            public void setSum(int sum) {
+            private int sum;
 
+            @Override
+            public T  getId() {
+                return id;
             }
 
             public AccountTest(T id, int sum) {
                 this.id = id;
                 this.sum = sum;
+
             }
         }
 
