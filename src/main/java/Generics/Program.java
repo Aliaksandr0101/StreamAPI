@@ -2,8 +2,8 @@ package Generics;
 
 public class Program {
     public static void main(String[] args) {
-        AccountTestt acc1 = new AccountTestt("Vasya", 56);
-        AccountTestt acc2 = new AccountTestt("Petya", 56);
+        AccountTestt acc1 = new AccountTestt("Vasya", 5000);
+        AccountTestt acc2 = new AccountTestt("Petya", 4300);
         Transaction<AccountTestt> personOne = new Transaction<>(acc1,acc2,14);
         personOne.execute();
 
@@ -22,19 +22,18 @@ public class Program {
                 this.id = id;
                 this.sum = sum;
             }
-
             @Override
             public String getId() {
-                return null;
+                return id;
             }
-
             @Override
             public int getSum() {
-                return 0;
+                return sum;
             }
 
             @Override
             public void setSum(int sum) {
+                this.sum = sum;
             }
         }
 
@@ -50,13 +49,16 @@ public class Program {
                 }
 
                 public void execute(){
-                    if (from.getSum()>sum) {
-                        from.setSum(from.getSum()-sum);
-                        to.setSum(to.getSum()+sum);
+
+                    if (from.getSum() > sum)
+                    {
+                        from.setSum(from.getSum() - sum);
+                        to.setSum(to.getSum() + sum);
                         System.out.printf("Account %s: %d \nAccount %s: %d \n",
-                                from.getId(), from.getSum(), to.getId(), to.getSum());
-                    } else {
-                        System.out.println("Operation is invalid");
+                                from.getId(), from.getSum(),to.getId(), to.getSum());
+                    }
+                    else{
+                        System.out.printf("Operation is invalid");
                     }
                 }
             }
