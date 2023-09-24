@@ -10,15 +10,15 @@ public class GenericConstructor<T,V> {
     }
 
     public static void main(String[] args) {
-         GenericConstructor<String, String> GenericOne = new GenericConstructor<>("Car", "Elephant");
+         /*GenericConstructor<String, String> GenericOne = new GenericConstructor<>("Car", "Elephant");
          GenericConstructor<String, Double> GenericTwo = new GenericConstructor<>("Car", 78.7);
-        AccountTest<String> acc1 = new AccountTest<String>("2345", 5000);
+        AccountTestt<String> acc1 = new AccountTestt<String>("2345", 5000);
         String acc1Id = acc1.getId();
         System.out.println(acc1Id);
 
-        AccountTest<Integer> acc2 = new AccountTest<Integer>(2345, 5000);
+        AccountTestt<Integer> acc2 = new AccountTestt<Integer>(2345, 5000);
         Integer acc2Id = acc2.getId();
-        System.out.println(acc2Id);
+        System.out.println(acc2Id);*/
 
 
 
