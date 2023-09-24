@@ -5,7 +5,8 @@ public class Program {
         AccountTest<String> acc1 = new AccountTest<>("Vasya", 23);
         AccountTest<Integer> acc2 = new AccountTest<>(456, 33);
         System.out.println(acc1.getId());
-        acc2.getId();
+        System.out.println(acc2.getId());
+
     }
 }
     interface AccountPlus<T> {
