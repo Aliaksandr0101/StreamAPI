@@ -6,6 +6,7 @@ public class Program {
         AccountTestt acc2 = new AccountTestt("Petya", 4300);
         Transaction<AccountTestt> personOne = new Transaction<>(acc1,acc2,14);
         Transaction<AccountTestt> personTwo = new Transaction<>(acc1,acc2,14);
+        Transaction<AccountTestt> personThree = new Transaction<>(acc1,acc2,14);
         personOne.execute();
 
     }
