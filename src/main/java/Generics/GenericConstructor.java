@@ -19,9 +19,6 @@ public class GenericConstructor<T,V> {
         Account<Integer> acc2 = new Account<>(2345, 5000);
         Integer acc2Id = acc2.getId();
         System.out.println(acc2Id);
-
-
-
     }
 }
  class Account<T>{
