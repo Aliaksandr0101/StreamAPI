@@ -1,5 +1,4 @@
 package Errors;
-
 import java.util.Scanner;
 
 public class Attempt {
@@ -9,6 +8,7 @@ public class Attempt {
         Scanner scanner = new Scanner(System.in);
         a = scanner.nextInt();
         b = scanner.nextInt();
+        scanner.close();
         try {
             System.out.println(a/b);
         }catch (ArithmeticException arithmeticException){
@@ -17,4 +17,26 @@ public class Attempt {
             System.out.println("Код отработал");
         }
     }
+
 }
+class AttemptTwo{
+    int a,b,c;
+    Scanner scanner = new Scanner(System.in);
+    public void check() throws Exception{
+        a = scanner.nextInt();
+        b = scanner.nextInt();
+        c = scanner.nextInt();
+        scanner.close();
+        try {
+            if(a < 0) {
+                throw new ArithmeticException("А меньше нуля");
+            }
+            if ((Math.pow(b,2)-(4*a*c)) < 0) {
+                throw new ArithmeticException("Дискриминант меньше нуля");
+            }
+        } catch (ArithmeticException arithmeticException){
+            System.out.println(arithmeticException);
+        }
+    }
+
+        }
