@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Attempt {
     public static void main(String[] args) {
+        AttemptTwo attemptTwo = new AttemptTwo();
+        attemptTwo.check();
+        AttemptThree attemptThree = new AttemptThree();
+        attemptThree.checkTwo();
         int a;
         int b;
         Scanner scanner = new Scanner(System.in);
@@ -21,9 +25,9 @@ public class Attempt {
 
 }
 class AttemptTwo{
-    int a,b,c;
-    Scanner scanner = new Scanner(System.in);
-    public void check() throws Exception{
+    public void check() {
+        int a,b,c;
+        Scanner scanner = new Scanner(System.in);
         a = scanner.nextInt();
         b = scanner.nextInt();
         c = scanner.nextInt();
@@ -39,6 +43,7 @@ class AttemptTwo{
             System.out.println(arithmeticException);
         }
     }
+
 }
 class AttemptThree{
     int a,b;
