@@ -1,4 +1,5 @@
 package Errors;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Attempt {
@@ -38,5 +39,19 @@ class AttemptTwo{
             System.out.println(arithmeticException);
         }
     }
+}
+class AttemptThree{
+    int a,b;
+    Scanner scanner = new Scanner(System.in);
+    public void checkTwo(){
+        a = scanner.nextInt();
+        b = scanner.nextInt();
+        try {
+            System.out.println(a/b);
+        }catch(ArithmeticException arithmeticException) {
+
+        } catch(Exception e){
 
         }
+    }
+}
