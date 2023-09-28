@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Attempt {
     public static void main(String[] args) {
         AttemptTwo attemptTwo = new AttemptTwo();
-        attemptTwo.check();
         AttemptThree attemptThree = new AttemptThree();
         attemptThree.checkTwo();
         int a;
@@ -25,7 +24,7 @@ public class Attempt {
 
 }
 class AttemptTwo{
-    public void check() {
+    public void check() throws Exception{
         int a,b,c;
         Scanner scanner = new Scanner(System.in);
         a = scanner.nextInt();
