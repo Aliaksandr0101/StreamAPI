@@ -28,9 +28,5 @@ public class ErrorExample {
         } catch(ArithmeticException e) {
             System.err.println("ArithmeticException (You divide by zero)");
         }
-
-
     }
-
-
 }
