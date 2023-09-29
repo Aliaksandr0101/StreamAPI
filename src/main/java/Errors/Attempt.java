@@ -55,7 +55,6 @@ class AttemptThree{
         }catch(ArithmeticException arithmeticException) {
 
         } catch(Exception e){
-
         }
     }
 }
