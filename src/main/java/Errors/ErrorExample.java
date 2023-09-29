@@ -24,6 +24,7 @@ public class ErrorExample {
 
         try {
             System.out.println("result division = " + j/k);
+            System.out.println("D");
         } catch(ArithmeticException e) {
             System.err.println("ArithmeticException (You divide by zero)");
         }
