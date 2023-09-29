@@ -10,6 +10,7 @@ public class ErrorExample {
         j = scanner.nextInt();
         System.out.println("Enter the number");
         k = scanner.nextInt();
+        scanner.close();
 
         int [] arrayNumber = new int[j];
         for (int i = 0; i < j; i++) {
